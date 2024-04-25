@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   background-color: var(--cor-de-fundo);
   font-family: "Raleway";
+  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -23,14 +24,71 @@ a {
   color: var(--cor-de-link);
 }
 
+.all {
+  display: flex;
+  flex-direction: column;
+  gap: 300px; /* Espacamento entre as sessões */
+
+  padding: 0 7%;
+}
+
 /*Sessão Menu*/
 
 section.menu {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.menu > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+section.menu > header > h3.menu__title {
+  font-size: 16px;
+}
+
+section.menu > header > img {
+  width: 22px;
+  height: 22px;
+}
+
+section.menu > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+section.menu > nav > ul.menu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 32px;
+}
+
+section.menu > nav > li.menu__list__item__contato > a {
+  font-weight: 700;
 }
 
 /*Sessão Title*/
 
 section.title {
+  width: 100%;
+  height: 100%;
+}
+
+section.title > div.title__div {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*Sessão About*/
