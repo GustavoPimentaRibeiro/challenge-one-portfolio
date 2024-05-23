@@ -29,10 +29,10 @@ a {
   flex-direction: column;
   gap: 300px; /* Espacamento entre as sessões */
 
-  padding: 0 7%;
+  padding: 0 152px;
 }
 
-/*Sessão Menu*/
+/* ########## Sessão Menu ########## */
 
 section.menu {
   width: 100%;
@@ -65,21 +65,24 @@ section.menu > nav {
   flex-direction: row;
   align-items: center;
   gap: 32px;
+
+  white-space: nowrap;
 }
 
 section.menu > nav > ul.menu__list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
   gap: 32px;
+
+  padding: 0;
 }
 
 section.menu > nav > li.menu__list__item__contato > a {
   font-weight: 700;
 }
 
-/*Sessão Title*/
+/* ########## Sessão Title ########## */
 
 section.title {
   width: 100%;
@@ -91,37 +94,86 @@ section.title > div.title__div {
   flex-direction: row-reverse;
 }
 
-/*Sessão About*/
+section.title > div.title__div > div.title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+section.title > div.title__div > div.title__container > h2.title__bio {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+section.title > div.title__div > div.title__container > h3.title__subsection {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+section.title > div.title__div > div.title__container > h2.title__bio,
+section.title > div.title__div > div.title__container > h3.title__subsection {
+  margin: 0;
+}
+
+section.title > div.title__div > div.title__container > ul.title__network {
+  display: flex;
+  gap: 32px;
+
+  padding: 0;
+  margin: 0;
+}
+
+section.title > div.title__div > div.title__container > ul.title__network > a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+section.title
+  > div.title__div
+  > div.title__container
+  > ul.title__network
+  > li.title__network__item
+  > a
+  > img {
+  width: 12px;
+  height: 12px;
+}
+
+/* ########## Sessão About ######## */
 
 section.about {
 }
 
-/*Sessão Hobbies*/
+/* ########## Sessão Hobbies ########## */
 
 section.hobbies {
 }
 
-/* Experiência Acadêmica*/
+/* ########## Experiência Acadêmica ########## */
 
 section.academic {
 }
 
-/* experiência*/
+/* ########## experiência ########## */
 
 section.experience {
 }
 
-/*Contato*/
+/* ########## Contato ########## */
 
 section.formcontato {
 }
 
-/*footeer*/
+/* ########## footeer ########## */
 
 section.footer {
 }
 
-/*Tablet*/
+/* Tablet */
 @media (min-width: 768px) {
   /* Menu */
 
