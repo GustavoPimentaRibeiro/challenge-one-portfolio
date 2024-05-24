@@ -1,16 +1,20 @@
 :root {
   --cor-de-fundo: #f5f5f5;
+  --cor-de-fundo-secundaria: #eaf2fd;
   --cor-de-link: #000;
+  --cor-dos-quadrados: #ffffff;
 }
 
 body {
   box-sizing: border-box;
   background-color: var(--cor-de-fundo);
+
   font-family: "Raleway";
   font-size: 16px;
+  line-height: 1;
+
   margin: 0;
   padding: 0;
-  line-height: 1;
 }
 
 ol,
@@ -24,24 +28,26 @@ a {
   color: var(--cor-de-link);
 }
 
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 .all {
   display: flex;
   flex-direction: column;
   gap: 300px; /* Espacamento entre as sessões */
-
-  padding: 0 152px;
 }
 
 /* ########## Sessão Menu ########## */
 
 section.menu {
-  width: 100%;
-  height: 100%;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  padding: 0 152px;
 }
 
 section.menu > header {
@@ -85,8 +91,7 @@ section.menu > nav > li.menu__list__item__contato > a {
 /* ########## Sessão Title ########## */
 
 section.title {
-  width: 100%;
-  height: 100%;
+  padding: 0 152px;
 }
 
 section.title > div.title__div {
@@ -113,17 +118,9 @@ section.title > div.title__div > div.title__container > h3.title__subsection {
   line-height: 25px;
 }
 
-section.title > div.title__div > div.title__container > h2.title__bio,
-section.title > div.title__div > div.title__container > h3.title__subsection {
-  margin: 0;
-}
-
 section.title > div.title__div > div.title__container > ul.title__network {
   display: flex;
   gap: 32px;
-
-  padding: 0;
-  margin: 0;
 }
 
 section.title > div.title__div > div.title__container > ul.title__network > a {
@@ -146,16 +143,200 @@ section.title
 /* ########## Sessão About ######## */
 
 section.about {
+  background-color: var(--cor-de-fundo-secundaria);
+}
+
+section.about > div.about__container {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 64px 152px;
+}
+
+section.about > div.about__container > h3.about__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+section.about > div.about__container > p.about__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* ########## Sessão Skills ########## */
+
+section.skills {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 152px;
+}
+
+section.skills > h3.skills__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+section.skills > div.skills__line {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  margin: auto;
+}
+
+section.skills > div.skills__line > div.skills__box {
+  width: 176px;
+  height: 174px;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: var(--cor-dos-quadrados);
+}
+
+section.skills > div.skills__line > div.skills__box > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  padding: 16px;
+}
+
+section.skills > div.skills__line > div.skills__box > ul > li.skills__name {
+  font-weight: 700;
+  line-height: 18px;
 }
 
 /* ########## Sessão Hobbies ########## */
 
 section.hobbies {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 152px;
+}
+
+section.hobbies > h3.hobbies__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+section.hobbies > div.hobbies__line {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  margin: auto;
+}
+
+section.hobbies > div.hobbies__line > div.hobbies__box {
+  width: 176px;
+  height: 174px;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: var(--cor-dos-quadrados);
+}
+
+section.hobbies > div.hobbies__line > div.hobbies__box > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  padding: 16px;
+}
+
+section.hobbies > div.hobbies__line > div.hobbies__box > ul > li.hobbies__name {
+  font-weight: 700;
+  line-height: 18px;
 }
 
 /* ########## Experiência Acadêmica ########## */
 
 section.academic {
+  display: flex;
+  flex-direction: column;
+
+  padding: 82px 152px;
+}
+
+section.academic > h2.academic__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+section.academic > div.academic__courses {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  margin: auto;
+}
+
+section.academic
+  > div.academic__courses
+  > div.academic__courses__box
+  > ul.academic__courses__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+section.academic
+  > div.academic__courses
+  > div.academic__courses__box
+  > ul.academic__courses__list
+  > li.academic__courses__item__img {
+  width: 368px;
+  height: 286px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cor-dos-quadrados);
+}
+
+section.academic
+  > div.academic__courses
+  > div.academic__courses__box
+  > ul.academic__courses__list
+  > li.academic__courses__item__title
+  > h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+section.academic
+  > div.academic__courses
+  > div.academic__courses__box
+  > ul.academic__courses__list
+  > li.academic__courses__item__subtitle
+  > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 /* ########## experiência ########## */
