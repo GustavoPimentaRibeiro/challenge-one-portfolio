@@ -1,8 +1,9 @@
 :root {
   --cor-de-fundo: #f5f5f5;
-  --cor-de-fundo-secundaria: #eaf2fd;
+  --cor-de-fundo-secundaria: #caddf8;
   --cor-de-link: #000;
   --cor-dos-quadrados: #ffffff;
+  --cor-do-botao-demo: #2a7ae4;
 }
 
 body {
@@ -28,7 +29,12 @@ a {
   color: var(--cor-de-link);
 }
 
-h1, h2, h3, h4, p, ul {
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -36,7 +42,7 @@ h1, h2, h3, h4, p, ul {
 .all {
   display: flex;
   flex-direction: column;
-  gap: 300px; /* Espacamento entre as sessões */
+  gap: 32px; /* Espacamento entre as sessões */
 }
 
 /* ########## Sessão Menu ########## */
@@ -47,7 +53,7 @@ section.menu {
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 152px;
+  padding: 32px 152px;
 }
 
 section.menu > header {
@@ -97,6 +103,13 @@ section.title {
 section.title > div.title__div {
   display: flex;
   flex-direction: row-reverse;
+}
+
+section.title > div.title__div > img.title__profile {
+  width: 368px;
+  height: 368px;
+
+  border-radius: 50%;
 }
 
 section.title > div.title__div > div.title__container {
@@ -275,6 +288,8 @@ section.academic {
   flex-direction: column;
 
   padding: 82px 152px;
+
+  background-color: var(--cor-de-fundo-secundaria);
 }
 
 section.academic > h2.academic__title {
@@ -302,6 +317,7 @@ section.academic
   flex-direction: column;
   gap: 8px;
 }
+
 section.academic
   > div.academic__courses
   > div.academic__courses__box
@@ -342,16 +358,170 @@ section.academic
 /* ########## experiência ########## */
 
 section.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  padding: 0 420px;
+}
+
+section.experience > h2.experience__section__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+section.experience > div.experiencie__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 26px;
+}
+
+section.experience > div.experiencie__box:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+section.experience > div.experiencie__box > div.experience__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > h2.experience__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > h3.experience__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > div.experience__description {
+  display: flex;
+  gap: 16px;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > div.experience__description
+  > span
+  > a
+  > button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  padding: 16px;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > div.experience__description
+  > span
+  > a
+  > button:hover {
+  cursor: pointer;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > div.experience__description
+  > span.experience__repo
+  > a
+  > button {
+  color: var(--cor-do-botao-demo);
+  background-color: #ffffff;
+  border: 1px solid var(--cor-do-botao-demo);
+  border-radius: 6%;
+}
+
+section.experience
+  > div.experiencie__box
+  > div.experience__info
+  > div.experience__description
+  > span.experience__demo
+  > a
+  > button {
+  color: #ffffff;
+  background-color: var(--cor-do-botao-demo);
+  border: 1px solid var(--cor-do-botao-demo);
+  border-radius: 6%;
 }
 
 /* ########## Contato ########## */
 
-section.formcontato {
+section.contato {
+  display: flex;
+
+  padding: 64px 152px;
+  background-color: var(--cor-de-fundo-secundaria);
+}
+
+section.contato > div.contato__contacto {
+  display: flex;
+  gap: 16px;
+
+  padding-top: 65px;
+  margin: auto;
+}
+
+section.contato > div.contato__contacto > div.contato__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.contato > div.contato__contacto > div.contato__text > h2.contato__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+section.contato > div.contato__contacto > div.contato__text > h3.contato__subtext {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 /* ########## footeer ########## */
 
 section.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 0 0 32px 0;
+}
+
+section.footer > div.footer__rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+section.footer > div.footer__rodape > p {
+  text-align: center;
 }
 
 /* Tablet */
