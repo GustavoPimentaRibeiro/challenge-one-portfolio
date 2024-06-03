@@ -1,0 +1,83 @@
+/*Mobile*/
+@media (max-width: 425px) {
+  .all {
+    gap: 0;
+  }
+
+  /*Menu*/
+  section.menu {
+    padding: 16px;
+  }
+
+  section.menu > nav > li.menu__list__item__contato {
+    display: none;
+  }
+
+  /*Titulo*/
+  section.title {
+    padding: 16px;
+  }
+
+  section.title > div.title__div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Sessão sobre*/
+
+  /*Skills*/
+  section.skills > div.skills__line > div.skills__box {
+    width: 156px;
+    height: 118px;
+  }
+
+  /*Hobbies*/
+  section.hobbies > div.hobbies__line > div.hobbies__box {
+    width: 156px;
+    height: 118px;
+  }
+
+  /*Formação Acadêmica*/
+  section.academic {
+    padding: 16px;
+  }
+
+  section.academic > div.academic__courses {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+  }
+
+  /*Experiência Profissional*/
+  section.experience {
+    padding: 16px;
+  }
+
+  section.experience > h2.experience__section__title {
+    padding: 0;
+  }
+
+  /*Contato*/
+  section.contato {
+    padding: 16px;
+  }
+
+  section.contato
+    > div.contato__contacto
+    > div.contato__text
+    > div.contato__redes
+    > a
+    > button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+
+    padding: 12px 16px;
+  }
+
+  /*Footer*/
+  section.footer {
+    padding: 16px;
+  }
+}

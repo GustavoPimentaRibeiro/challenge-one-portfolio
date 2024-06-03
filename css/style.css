@@ -68,8 +68,8 @@ section.menu > header > h3.menu__title {
 }
 
 section.menu > header > img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 section.menu > nav {
@@ -105,10 +105,8 @@ section.title > div.title__div {
   flex-direction: row-reverse;
 }
 
-section.title > div.title__div > img.title__profile {
-  width: 368px;
-  height: 368px;
-
+section.title > div.title__div > picture > img.title__profile,
+section.title > div.title__div > picture > source {
   border-radius: 50%;
 }
 
@@ -491,16 +489,56 @@ section.contato > div.contato__contacto > div.contato__text {
   gap: 8px;
 }
 
-section.contato > div.contato__contacto > div.contato__text > h2.contato__title {
+section.contato
+  > div.contato__contacto
+  > div.contato__text
+  > div.contato__redes {
+  margin-top: 18px;
+}
+
+section.contato
+  > div.contato__contacto
+  > div.contato__text
+  > h2.contato__title {
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
 }
 
-section.contato > div.contato__contacto > div.contato__text > h3.contato__subtext {
+section.contato
+  > div.contato__contacto
+  > div.contato__text
+  > h3.contato__subtext {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+
+section.contato
+  > div.contato__contacto
+  > div.contato__text
+  > div.contato__redes
+  > a
+  > button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: var(--cor-do-botao-demo);
+  border: 1px solid var(--cor-do-botao-demo);
+  border-radius: 6%;
+
+  padding: 16px;
+}
+
+section.contato
+  > div.contato__contacto
+  > div.contato__text
+  > div.contato__redes
+  > a
+  > button:hover {
+  cursor: pointer;
 }
 
 /* ########## footeer ########## */
@@ -522,40 +560,4 @@ section.footer > div.footer__rodape {
 
 section.footer > div.footer__rodape > p {
   text-align: center;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-  /* Menu */
-
-  /*title*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Experiências acadêmicas*/
-
-  /*Expeirência profissional*/
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-  /*Menu*/
-
-  /*Titulo*/
-
-  /*Sessão sobre*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formação Acadêmica*/
-
-  /*Experiência Profissional*/
-
-  /*Contato*/
-
-  /*Footer*/
 }
